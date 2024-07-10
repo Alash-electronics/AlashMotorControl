@@ -114,7 +114,6 @@ AlashMotorControlX2 имеет те же методы, что и AlashMotorContr
 Примеры можно найти в папке examples или, если библиотека установлена в Arduino IDE, через меню _Файл -> Примеры -> AlashMotorControl_.
 
 Схемы подключения можно найти в папке _schema_.
-```
 
 ![L298NX2 - Schema_without_EN_pins](https://github.com/Alash-electronics/AlashMotorControl/assets/171731850/f49d3a24-c0d8-404a-8e69-5fe0ca60e0a0)
 ![L298NX2 - Schema_with_EN_pins](https://github.com/Alash-electronics/AlashMotorControl/assets/171731850/2b4a2df4-fa63-4a6c-85e1-2228c47fe866)
