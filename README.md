@@ -115,3 +115,8 @@ AlashMotorControlX2 имеет те же методы, что и AlashMotorContr
 
 Схемы подключения можно найти в папке _schema_.
 ```
+
+![L298NX2 - Schema_without_EN_pins](https://github.com/Alash-electronics/AlashMotorControl/assets/171731850/f49d3a24-c0d8-404a-8e69-5fe0ca60e0a0)
+![L298NX2 - Schema_with_EN_pins](https://github.com/Alash-electronics/AlashMotorControl/assets/171731850/2b4a2df4-fa63-4a6c-85e1-2228c47fe866)
+![L298N - Schema_without_EN_pin](https://github.com/Alash-electronics/AlashMotorControl/assets/171731850/d424b0ec-7fcf-4ec8-a628-932d95376f11)
+![L298N - Schema_with_EN_pin](https://github.com/Alash-electronics/AlashMotorControl/assets/171731850/c291277b-08c3-4a9e-8740-f5b6128b6df4)
