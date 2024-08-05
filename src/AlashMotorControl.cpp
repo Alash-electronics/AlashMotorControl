@@ -48,8 +48,11 @@ void AlashMotorControl::forward() {
   digitalWrite(_pinIN1, HIGH);
   digitalWrite(_pinIN2, LOW);
 
+#if defined(ARDUINO_ARCH_ESP32)
+  ledcWrite(_pinEnable, _pwmVal);
+#else
   analogWrite(_pinEnable, _pwmVal);
-
+#endif
   _direction = FORWARD;
   _isMoving = true;
 }
@@ -58,8 +61,11 @@ void AlashMotorControl::backward() {
   digitalWrite(_pinIN1, LOW);
   digitalWrite(_pinIN2, HIGH);
 
+#if defined(ARDUINO_ARCH_ESP32)
+  ledcWrite(_pinEnable, _pwmVal);
+#else
   analogWrite(_pinEnable, _pwmVal);
-
+#endif
   _direction = BACKWARD;
   _isMoving = true;
 }
@@ -150,8 +156,11 @@ void AlashMotorControl::stop() {
   digitalWrite(_pinIN1, LOW);
   digitalWrite(_pinIN2, LOW);
 
+#if defined(ARDUINO_ARCH_ESP32)
+  ledcWrite(_pinEnable, 255);
+#else
   analogWrite(_pinEnable, 255);
-
+#endif
   _direction = STOP;
   _isMoving = false;
 }
@@ -160,8 +169,11 @@ void AlashMotorControl::HardStop() {
   digitalWrite(_pinIN1, HIGH);
   digitalWrite(_pinIN2, HIGH);
 
+#if defined(ARDUINO_ARCH_ESP32)
+  ledcWrite(_pinEnable, 255);
+#else
   analogWrite(_pinEnable, 255);
-
+#endif
   _direction = STOP;
   _isMoving = false;
 }
