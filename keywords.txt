@@ -1,17 +1,18 @@
-#########################################
+# ########################################
 # Syntax Coloring Map For AlashMotorControl, AlashMotorControlX2
-#########################################
+# ########################################
 
-#########################################
+# ########################################
 # Datatypes (KEYWORD1)
-#########################################
+# ########################################
 
 AlashMotorControl			KEYWORD1
 AlashMotorControlX2	 		KEYWORD1
+MotorDriverType				KEYWORD1     # Added Enum Type
 
-#########################################
+# ########################################
 # Methods and Functions (KEYWORD2)
-#########################################
+# ########################################
 
 setSpeed		KEYWORD2
 getSpeed		KEYWORD2
@@ -22,46 +23,50 @@ backwardFor		KEYWORD2
 run				KEYWORD2
 runFor			KEYWORD2
 stop			KEYWORD2
+HardStop	    KEYWORD2     # Added
 reset			KEYWORD2
 isMoving		KEYWORD2
 getDirection	KEYWORD2
-сontrolBySpeed	KEYWORD2
-HardStop	KEYWORD2
+controlBySpeed	KEYWORD2     # Renamed from сontrolBySpeed (typo?)
+getDriverType   KEYWORD2     # Added
 
 setSpeedA		KEYWORD2
 getSpeedA		KEYWORD2
 forwardA		KEYWORD2
 forwardForA		KEYWORD2
-forwardForA		KEYWORD2
 backwardA		KEYWORD2
-backwardForA	KEYWORD2
 backwardForA	KEYWORD2
 runA			KEYWORD2
 runForA			KEYWORD2
 stopA			KEYWORD2
+HardStopA       KEYWORD2     # Added
 resetA			KEYWORD2
 isMovingA		KEYWORD2
 getDirectionA	KEYWORD2
+getDriverTypeA  KEYWORD2     # Added
 
 setSpeedB		KEYWORD2
 getSpeedB		KEYWORD2
 forwardB		KEYWORD2
 forwardForB		KEYWORD2
-forwardForB		KEYWORD2
 backwardB		KEYWORD2
-backwardForB	KEYWORD2
 backwardForB	KEYWORD2
 runB			KEYWORD2
 runForB			KEYWORD2
 stopB			KEYWORD2
+HardStopB       KEYWORD2     # Added
 resetB			KEYWORD2
 isMovingB		KEYWORD2
 getDirectionB	KEYWORD2
+getDriverTypeB  KEYWORD2     # Added
 
-#########################################
+# ########################################
 # Constants (LITERAL1)
-#########################################
+# ########################################
 
 BACKWARD		LITERAL1
 FORWARD			LITERAL1
 STOP			LITERAL1
+
+DRIVER_L298N    LITERAL1     # Added Enum Value
+DRIVER_TA6586   LITERAL1     # Added Enum Value
