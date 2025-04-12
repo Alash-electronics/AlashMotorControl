@@ -1,6 +1,3 @@
-README файл от Alash electronics
-Markdown
-
 # Библиотека AlashMotorControl от Alash electronics
 
 Добро пожаловать! Alash electronics с гордостью представляет библиотеку **AlashMotorControl**, разработанную в Казахстане для легкого и эффективного управления двигателями постоянного тока (DC моторами) с помощью платформы Arduino.
